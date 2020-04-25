@@ -159,3 +159,23 @@ Podstawy: <br>
 <br>
 Język Angielski C1/C2
 </div>    
+
+// Add class info--edu remove class info--about info--skills
+<h2 class="heading-2">Edukacja:</h2>
+        <h3 class="heading-3"></h3>
+            <div class="info__bullet-point">Modern JavaScript bootcamp 2020 - W trakcie nauki</div>
+            <div class="info__bullet-point">Advanced CSS - SASS, Flexbox, GRID + animations (Udemy kurs)</div>
+            <div class="info__bullet-point">Responsive Blog with bootstrap - podstawy budowy systemu CMS przy pomocy PHP, MySQLi oraz Bootstrapa</div>
+            <div class="info__bullet-point">Pasja informatyki - Podstawy HTML, CSS, PHP, JavaScript, Bootstrap</div>
+            <br>
+
+        <h2 class="heading-2">Doświadczenie:</h2>
+<br>
+            <h3 class="heading-3">TiGi Team Leader’s Support</h3>
+            <div class="info__date">01.2016-05.2019 Milton Keynes, Wielka Brytania</div>
+            <div class="info__bullet-point">organizacja pracy teamu goods in</div>
+            <div class="info__bullet-point">sprawdzanie nieścisłości produktów/raportowanie</div>
+            <div class="info__bullet-point">zarządzanie dostawami (inbound oraz outbound)</div>
+            <div class="info__bullet-point">szkolenie nowych pracowników</div>
+            <div class="info__bullet-point">przygotowywanie procedur</div>
+        </div>

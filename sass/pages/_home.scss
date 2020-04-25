@@ -64,7 +64,7 @@
 		margin-bottom: .7rem;
 		&--social {
 			width: 50%;
-			height: 50%;
+			height: 6rem;
 		}
 	}
 }
@@ -116,7 +116,20 @@
 		grid-template-rows: repeat(14, 2.6rem);
 		gap: $gap;
 		font-size: $fs0;
-		font-family: $ff-text;
+	}
+	&--edu {
+		padding: 4rem;
+	}
+	&__date {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+	&__bullet-point {
+		font-size: $fs-14;
+		margin-left: 1rem;
+		&::before {
+			content: "- ";
+		}
 	}
 }
 .skill {
