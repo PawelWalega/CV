@@ -32,7 +32,6 @@
 	gap: $gap;
 }
 .tile {
-	font-family: $ff-head;
 	font-size: $fs-1;
 	color: #fff;
 	text-transform: uppercase;
@@ -72,7 +71,7 @@
 	height: 100%;
 	border-radius: $br-std;
 	&--gh {
-		grid-column: 1/ span 4;
+		grid-column: 1 / span 4;
 		@include tile-flex;
 		@include tile-link;
 		box-shadow: $bs-std;
@@ -84,6 +83,10 @@
 		@include tile-link;
 		box-shadow: $bs-std;
 		background-color: #107dac;
+	}
+	&__link {
+		display: flex;
+		justify-content: center;
 	}
 }
 .quote {
@@ -102,8 +105,11 @@
 	border-radius: $br-std;
 	box-shadow: $bs-std;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	color: $fc-gray;
 
-	&-img {
+	&__img {
 		max-width: 100%;
 	}
 
@@ -120,6 +126,7 @@
 	}
 	&--edu {
 		padding: 4rem;
+		display: block;
 	}
 	&__date {
 		font-size: 1.2rem;
@@ -164,7 +171,6 @@
 	grid-column: 2/ span 12;
 	grid-row: 5 / 6;
 
-	font-family: $ff-head;
 	font-size: $fs-1;
 	text-transform: uppercase;
 	background-color: $c-tertiary;

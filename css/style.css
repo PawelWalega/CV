@@ -23,7 +23,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
@@ -83,7 +83,6 @@ body {
   grid-template-columns: repeat(12, minmax(2rem, 300rem));
   gap: 1rem; }
   .header-logo {
-    font-family: "Roboto", sans-serif;
     font-size: var(--scale4);
     font-weight: 300;
     letter-spacing: .5rem;
@@ -102,7 +101,6 @@ body {
       transform: scale(1.01) translateY(-0.1rem);
       box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); }
   .header-clock {
-    font-family: "Roboto", sans-serif;
     font-size: var(--scale4);
     font-weight: 300;
     letter-spacing: .5rem;
@@ -125,7 +123,6 @@ body {
   gap: 1rem; }
 
 .tile {
-  font-family: "Roboto", sans-serif;
   font-size: var(--scale-1);
   color: #fff;
   text-transform: uppercase;
@@ -166,7 +163,7 @@ body {
   height: 100%;
   border-radius: 0.5rem; }
   .social--gh {
-    grid-column: 1/ span 4;
+    grid-column: 1 / span 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,6 +188,9 @@ body {
     .social--li:hover {
       transform: scale(1.01) translateY(-0.1rem);
       box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); }
+  .social__link {
+    display: flex;
+    justify-content: center; }
 
 .quote {
   font-weight: 300;
@@ -205,8 +205,11 @@ body {
   grid-column: 7 / span 6;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  overflow: hidden; }
-  .info-img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  color: #808080; }
+  .info__img {
     max-width: 100%; }
   .info--about {
     text-align: justify;
@@ -218,7 +221,8 @@ body {
     gap: 1rem;
     font-size: var(--scale0); }
   .info--edu {
-    padding: 4rem; }
+    padding: 4rem;
+    display: block; }
   .info__date {
     font-size: 1.2rem;
     font-weight: 700; }
@@ -253,7 +257,6 @@ body {
 .footer {
   grid-column: 2/ span 12;
   grid-row: 5 / 6;
-  font-family: "Roboto", sans-serif;
   font-size: var(--scale-1);
   text-transform: uppercase;
   background-color: #999999;
