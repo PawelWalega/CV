@@ -9,31 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="timer.js"></script>
+	<script src="info.js"></script>
 </head>
-<body>
+<body onload="odliczanie();">
 <main class="container">
 
     <!-- HEADER -->
 
     <header class="header">
         <nav class="header-logo">Paweł Wałęga</nav>
-        <div class="header-clock">12:00:00</div>
+        <div class="header-clock" id="zegar" onselectstart="window.event.returnValue=false;"></div>
     </header>
 
     <!-- MAIN CONTENT -->
 
     <article class="content">
-        <div class="tile tile--1">
+        <div class="tile tile--1" onclick="showAbout()" onselectstart="window.event.returnValue=false;">
             <svg class="tile__icon">
                 <use xlink:href="img/symbols.svg#icon-user"></use>
             </svg>
             O mnie</div>
-        <div class="tile tile--1">
+        <div class="tile tile--1" onclick="showSkills()" onselectstart="window.event.returnValue=false;">
             <svg class="tile__icon">
                 <use xlink:href="img/symbols.svg#icon-tv"></use>
             </svg>
             Umiejętności</div>
-        <div class="tile tile--1">
+        <div class="tile tile--1" onclick="showExp()" onselectstart="window.event.returnValue=false;">
             <svg class="tile__icon">
                 <use xlink:href="img/symbols.svg#icon-graduation-cap"></use>
             </svg>
@@ -41,10 +44,11 @@
 
         <div class="tile tile--social">
             <div class="social social--gh">
-                
-                <svg class="tile__icon tile__icon--social">
-                    <use xlink:href="img/symbols.svg#icon-github"></use>
-                </svg>
+                <a href="https://github.com/PawelWalega" target="_blank">
+                    <svg class="tile__icon tile__icon--social">
+                        <use xlink:href="img/symbols.svg#icon-github"></use>
+                    </svg>
+                </a>
             </div>
             <div class="social social--li">
                 <svg class="tile__icon tile__icon--social">
@@ -57,27 +61,10 @@
 
         <!-- INFO TILE -->
 
-        <div id="info" class="info info--edu">
+        <div id="info" class="info">
             <!-- <img src="img/responsivewebdesign.jpg" alt="responsywny web design" class="info-img">-->
     
-        <h2 class="heading-2">Edukacja:</h2>
-        <h3 class="heading-3"></h3>
-            <div class="info__bullet-point">Modern JavaScript bootcamp 2020 - W trakcie nauki</div>
-            <div class="info__bullet-point">Advanced CSS - SASS, Flexbox, GRID + animations (Udemy kurs)</div>
-            <div class="info__bullet-point">Responsive Blog with bootstrap - podstawy budowy systemu CMS przy pomocy PHP, MySQLi oraz Bootstrapa</div>
-            <div class="info__bullet-point">Pasja informatyki - Podstawy HTML, CSS, PHP, JavaScript, Bootstrap</div>
-            <br>
-
-        <h2 class="heading-2">Doświadczenie:</h2>
-<br>
-            <h3 class="heading-3">TiGi Team Leader’s Support</h3>
-            <div class="info__date">01.2016-05.2019 Milton Keynes, Wielka Brytania</div>
-            <div class="info__bullet-point">organizacja pracy teamu goods in</div>
-            <div class="info__bullet-point">sprawdzanie nieścisłości produktów/raportowanie</div>
-            <div class="info__bullet-point">zarządzanie dostawami (inbound oraz outbound)</div>
-            <div class="info__bullet-point">szkolenie nowych pracowników</div>
-            <div class="info__bullet-point">przygotowywanie procedur</div>
-        </div>
+        
 
     </article>
 

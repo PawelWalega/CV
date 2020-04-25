@@ -209,7 +209,8 @@ body {
   .info-img {
     max-width: 100%; }
   .info--about {
-    text-align: justify; }
+    text-align: justify;
+    padding: 4rem; }
   .info--skills {
     display: grid;
     grid-template-columns: 4rem 14rem 4rem 1fr 4rem;
