@@ -19,7 +19,7 @@
     <!-- HEADER -->
 
     <header class="header">
-        <nav class="header-logo">Paweł Wałęga</nav>
+        <nav class="header-logo" onselectstart="window.event.returnValue=false;" onclick="showImage()">Paweł Wałęga</nav>
         <div class="header-clock" id="zegar" onselectstart="window.event.returnValue=false;"></div>
     </header>
 
@@ -44,16 +44,18 @@
 
         <div class="tile tile--social">
             <div class="social social--gh">
-                <a href="https://github.com/PawelWalega" target="_blank">
+                <a href="https://github.com/PawelWalega" target="_blank" class="social__link">
                     <svg class="tile__icon tile__icon--social">
                         <use xlink:href="img/symbols.svg#icon-github"></use>
                     </svg>
                 </a>
             </div>
             <div class="social social--li">
-                <svg class="tile__icon tile__icon--social">
-                    <use xlink:href="img/symbols.svg#icon-linkedin1"></use>
-                </svg>
+                <a href="https://www.linkedin.com/in/pawe%C5%82-wa%C5%82%C4%99ga-4761671a0/" target="_blank" class="social__link">
+                    <svg class="tile__icon tile__icon--social">
+                        <use xlink:href="img/symbols.svg#icon-linkedin1"></use>
+                    </svg>
+                </a>
             </div>
         </div>
 
@@ -62,10 +64,10 @@
         <!-- INFO TILE -->
 
         <div id="info" class="info">
-            <!-- <img src="img/responsivewebdesign.jpg" alt="responsywny web design" class="info-img">-->
+            <img src="img/responsivewebdesign.jpg" alt="responsywny web design" class="info__img">
     
         
-
+        </div>
     </article>
 
     <!-- FOOTER -->
