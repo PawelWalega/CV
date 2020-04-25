@@ -41,8 +41,10 @@ $mb-p: 2rem;
 // GRID
 $gap: 1rem;
 
-// BOX SHADOW
-$bs-std: 0 .5rem 1rem rgba(#000000, .2);
+// VARIOUS
+$bs-std: 0 .5rem 1rem rgba(#000000, .2); // Standard box-shadow
+$bs-hover: 0 .75rem 1.5rem rgba(#000000, .3); // Box-shadow hover values
+$br-std: .5rem; // Standard border radius for home page elements
 
 // BREAK POINTS
 $bp-lg: 65em;
