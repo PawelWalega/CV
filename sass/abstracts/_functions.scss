@@ -1,0 +1,38 @@
+// --- SCALABLE FONT SIZE ---
+
+:root {
+	$interval: 1.25; // Unitless for proportional, unit for fixed
+	$body-text: 1.6rem; // Must have a unit
+	$scale-min: -2; // Unitless negative integer
+	$scale-max: 5; // Unitless positive integer
+
+	--int: #{$interval};
+	--scale0: #{$body-text};
+
+	@if $scale-min < 0 {
+		// Generate scale variables smaller than the base text size
+		@for $i from -1 through $scale-min {
+			@if type-of($interval) == number {
+				@if unitless($interval) {
+					--scale#{$i}: calc(var(--scale#{$i + 1}) / var(--int));
+				} @else {
+					--scale#{$i}: calc(var(--scale#{$i + 1}) - var(--int));
+				}
+			}
+		}
+	}
+	@if $scale-max > 0 {
+		// Generate scale variables larger than the base text size
+		@for $i from 1 through $scale-max {
+			@if type-of($interval) == number {
+				@if unitless($interval) {
+					--scale#{$i}: calc(var(--scale#{$i - 1}) * var(--int));
+				} @else {
+					--scale#{$i}: calc(var(--scale#{$i - 1}) + var(--int));
+				}
+			}
+		}
+	}
+}
+
+// --------------------------

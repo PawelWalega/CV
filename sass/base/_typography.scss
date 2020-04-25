@@ -1,0 +1,21 @@
+body {
+	font-family: $ff-text, sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	color: $fc-black;
+}
+.heading-1 {
+	font-size: $fs2;
+}
+.heading-2 {
+	font-size: $fs-22;
+}
+.heading-3 {
+	font-size: $fs1;
+}
+.p {
+	font-size: $fs0;
+	&:not(:last-child) {
+		margin-bottom: $mb-p;
+	}
+}

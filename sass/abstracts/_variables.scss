@@ -1,0 +1,50 @@
+// MAIN COLORS
+$c-primary: #2f9599;
+$c-secondary: #47dee5;
+$c-tertiary: #999999;
+
+// FONT COLORS
+$fc-black: #000000;
+$fc-white: #ffffff;
+
+// FONT-FAMILIES
+$ff-head: 'Roboto', sans-serif;
+$ff-text: 'Lato', sans-serif;
+
+// FONT SIZES
+// Scalable font size - each font is previous font size * 1.25
+$fs-2: var(--scale-2); // 1.024rem
+$fs-1: var(--scale-1); // 1.28rem
+$fs0: var(--scale0); // 1.6rem
+$fs1: var(--scale1); // 2rem
+$fs2: var(--scale2); // 2.5rem
+$fs3: var(--scale3); // 3.125rem
+$fs4: var(--scale4); // 3.9rem
+$fs5: var(--scale5); // 4.9rem
+
+// Some in-between font sizes
+$fs-22: 2.2rem;
+$fs-19: 1.9rem;
+$fs-18: 1.8rem;
+$fs-d: 1.6rem;
+$fs-15: 1.5rem;
+$fs-14: 1.4rem;
+
+// MARGINS
+$m-xl: 10rem;
+$m-l: 8rem;
+$m-m: 4rem;
+$m-s: 1.5rem;
+// Paragraph margin
+$mb-p: 2rem;
+
+// GRID
+$gap: 1rem;
+
+// BOX SHADOW
+$bs-std: 0 .5rem 1rem rgba(#000000, .2);
+
+// BREAK POINTS
+$bp-lg: 65em;
+$bp-md: 54em;
+$bp-sm: 30em;
