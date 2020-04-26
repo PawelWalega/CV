@@ -93,10 +93,12 @@
 	font-weight: 300;
 	font-style: italic;
 	&::before {
-		content: "\201D";
+		font-size: $fs2;
+		content: "\201D\00a0";
 	}
 	&::after {
-		content: "\201E";
+		font-size: $fs2;
+		content: "\00a0\201E";
 	}
 }
 .info {
@@ -129,14 +131,17 @@
 		display: block;
 	}
 	&__date {
-		font-size: 1.2rem;
+		font-size: $fs-14;
 		font-weight: 700;
 	}
 	&__bullet-point {
 		font-size: $fs-14;
 		margin-left: 1rem;
 		&::before {
-			content: "- ";
+			content: "\00b7\00a0";
+		}
+		&:last-child {
+			margin-bottom: .9rem;
 		}
 	}
 }

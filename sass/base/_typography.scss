@@ -10,6 +10,7 @@ body {
 }
 .heading-2 {
 	font-size: $fs1;
+	margin: 1rem 0;
 }
 .heading-3 {
 	font-size: $fs-18;
@@ -19,4 +20,8 @@ body {
 	&:not(:last-child) {
 		margin-bottom: $mb-p;
 	}
+}
+::selection {
+	color: #fff;
+	background-color: $c-primary;
 }

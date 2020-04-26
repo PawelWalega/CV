@@ -33,7 +33,8 @@ body {
   font-size: var(--scale2); }
 
 .heading-2 {
-  font-size: var(--scale1); }
+  font-size: var(--scale1);
+  margin: 1rem 0; }
 
 .heading-3 {
   font-size: 1.8rem; }
@@ -42,6 +43,10 @@ body {
   font-size: var(--scale0); }
   .p:not(:last-child) {
     margin-bottom: 2rem; }
+
+::selection {
+  color: #fff;
+  background-color: #2f9599; }
 
 .u-text-center {
   text-align: center !important; }
@@ -196,9 +201,11 @@ body {
   font-weight: 300;
   font-style: italic; }
   .quote::before {
-    content: "\201D"; }
+    font-size: var(--scale2);
+    content: "\201D\00a0"; }
   .quote::after {
-    content: "\201E"; }
+    font-size: var(--scale2);
+    content: "\00a0\201E"; }
 
 .info {
   grid-row: 1 / span 3;
@@ -224,13 +231,15 @@ body {
     padding: 4rem;
     display: block; }
   .info__date {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700; }
   .info__bullet-point {
     font-size: 1.4rem;
     margin-left: 1rem; }
     .info__bullet-point::before {
-      content: "- "; }
+      content: "\00b7\00a0"; }
+    .info__bullet-point:last-child {
+      margin-bottom: .9rem; }
 
 .skill {
   display: grid;
