@@ -12,8 +12,12 @@ html {
 		font-size: 50%;
 	}
 	@include responsive(small) {
-		font-size: 45%;
+		font-size: 40%;
 	}
+	@include responsive(xs) {
+		font-size: 30%;
+	}
+
 	@include responsive(XL) {
 		font-size: 75%;
 	}
