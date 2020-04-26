@@ -253,6 +253,7 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #808080; }
   @media only screen and (max-width: 53.125em) {
     .info {
@@ -262,7 +263,8 @@ body {
     max-width: 100%; }
   .info--about {
     text-align: justify;
-    padding: 3rem; }
+    padding: 3rem;
+    align-items: flex-start; }
   .info--skills {
     display: grid;
     grid-template-columns: 4rem 14rem 4rem 1fr 4rem;

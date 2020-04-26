@@ -19,7 +19,7 @@
 
     <header class="header">
         <nav class="header-logo" onclick="showImage()" onselectstart="window.event.returnValue=false;">Paweł Wałęga</nav>
-        <div class="header-clock" id="zegar" onselectstart="window.event.returnValue=false;"></div>
+        <div class="header-clock" id="clock" onselectstart="window.event.returnValue=false;"></div>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -63,10 +63,12 @@
         <!-- INFO TILE -->
 
         <div id="info" class="info">
+            <picture class="info__img">
+                <source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 62.5em)">
+                <source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 112.5em)">
+                    <img src="img/responsivewebdesign.jpg" alt="responsywny web design">
+            </picture>
             
-            <img src="img/responsivewebdesign.jpg" alt="responsywny web design" class="info__img">
-    
-        
         </div>
     </article>
 

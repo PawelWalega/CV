@@ -134,6 +134,7 @@
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	color: $fc-gray;
 	@include responsive (medium) {
 		grid-row: 3/4;
@@ -147,6 +148,7 @@
 	&--about {
 		text-align: justify;
 		padding: 3rem;
+		align-items: flex-start;
 	}
 	&--skills {
 		display: grid;
