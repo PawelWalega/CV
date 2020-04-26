@@ -4,32 +4,50 @@
 	grid-template-columns: 1fr repeat(12, minmax(2rem, 9rem)) 1fr;
 	grid-template-rows: 8rem repeat(3, 16rem) 8rem;
 	gap: $gap;
+	@include responsive (medium) {
+		grid-template-rows: 8rem 8rem repeat(2, 16rem) 42rem 8rem;
+	}
 }
 .header {
 	grid-column: 2/ span 12;
 	display: grid;
 	grid-template-columns: repeat(12, minmax(2rem, 300rem));
 	gap: $gap;
+	@include responsive (medium) {
+		grid-row: span 2;
+	}
 
 	&-logo {
 		@include header-style;
 		@include tile-link;
 		box-shadow: $bs-std;
 		grid-column: 1/ span 6;
+		@include responsive (medium) {
+			grid-column: 1/ -1;
+		}
 	}
 	&-clock {
 		@include header-style;
 		box-shadow: $bs-std;
 		grid-column: 7/-1;
+		@include responsive (medium) {
+			grid-column: 1/ -1;
+		}
 	}
 }
 .content {
 	display: grid;
-	grid-row: 2/ span 3;
+
 	grid-column: 2 / span 12;
 	grid-template-columns: repeat(12, minmax(2rem, 300rem));
 	grid-template-rows: repeat(3, 16rem);
 	gap: $gap;
+
+	@include responsive (medium) {
+		grid-column: 2/ span 12;
+		grid-row: 3 / span 3;
+		grid-template-rows: repeat(2, 16rem) 42rem;
+	}
 }
 .tile {
 	font-size: $fs-1;
@@ -38,6 +56,10 @@
 	box-shadow: $bs-std;
 	grid-column: span 3;
 	@include tile-flex;
+
+	@include responsive (medium) {
+		grid-column: span 4;
+	}
 
 	&--1 {
 		background-color: $c-primary;
@@ -49,6 +71,9 @@
 		background-color: $c-secondary;
 		font-size: $fs1;
 		grid-column: span 6;
+		@include responsive (medium) {
+			grid-column: span 8;
+		}
 	}
 	&--social {
 		box-shadow: none;
@@ -62,7 +87,7 @@
 		fill: #fff;
 		margin-bottom: .7rem;
 		&--social {
-			width: 50%;
+			width: 6rem;
 			height: 6rem;
 		}
 	}
@@ -110,6 +135,10 @@
 	display: flex;
 	justify-content: center;
 	color: $fc-gray;
+	@include responsive (medium) {
+		grid-row: 3/4;
+		grid-column: 1 / span 12;
+	}
 
 	&__img {
 		max-width: 100%;
@@ -117,7 +146,7 @@
 
 	&--about {
 		text-align: justify;
-		padding: 4rem;
+		padding: 3rem;
 	}
 	&--skills {
 		display: grid;
@@ -125,10 +154,21 @@
 		grid-template-rows: repeat(14, 2.6rem);
 		gap: $gap;
 		font-size: $fs0;
+		@include responsive (medium) {
+			grid-template-columns: 2rem 12rem 2rem 15rem minmax(.5rem, 1fr) 12rem
+				minmax(0, 4fr);
+			grid-template-rows: repeat(7, 2.6rem) 1fr;
+			padding-top: 4rem;
+		}
 	}
 	&--edu {
-		padding: 4rem;
+		padding: 3rem;
 		display: block;
+		@include responsive (medium) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 2.5rem;
+		}
 	}
 	&__date {
 		font-size: $fs-14;
@@ -140,17 +180,25 @@
 		&::before {
 			content: "\00b7\00a0";
 		}
-		&:last-child {
-			margin-bottom: .9rem;
+		&--language {
+			font-size: $fs-15;
+			margin: 1.5rem 0;
+			&::before {
+				display: none;
+			}
 		}
 	}
 }
 .skill {
+	grid-column: 1 / -1;
 	display: grid;
 	grid-template-columns: 4rem 14rem 4rem 1fr 4rem;
 	gap: $gap;
-	grid-column: 1 / -1;
-	align-items: center;
+
+	@include responsive (medium) {
+		grid-column: 1 / span 4;
+		grid-template-columns: 2rem 12rem 2rem 15rem;
+	}
 
 	&__info {
 		grid-column: 2 /3;
@@ -169,12 +217,29 @@
 	}
 	&__others {
 		grid-row: 8 / -1;
-		grid-column: 2/ span 5;
+		grid-column: 2/ span 3;
+		@include responsive (medium) {
+			grid-row: 1 / -1;
+			grid-column: 6 / -1;
+			display: grid;
+			gap: $gap;
+			grid-template-rows: repeat(7, 2.5rem);
+			margin-top: 2rem;
+			align-items: center;
+			& h2 {
+				margin: 0;
+			}
+		}
 	}
 }
 .footer {
+	grid-row: 5/ -1;
 	grid-column: 2/ span 12;
-	grid-row: 5 / 6;
+
+	@include responsive (medium) {
+		grid-row: 6/ -1;
+		grid-column: 2 /span 12;
+	}
 
 	font-size: $fs-1;
 	text-transform: uppercase;
