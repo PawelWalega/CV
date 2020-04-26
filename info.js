@@ -41,6 +41,6 @@ function showAbout() {
 function showImage() {
 	el = document.getElementById('info');
 	el.innerHTML =
-		'<img src="img/responsivewebdesign.jpg" alt="responsywny web design" class="info__img">';
+		'<picture class="info__img"><source srcset="img/responsivewebdesign-xs.jpg" media="(max-width: 30em)"><source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 62.5em)"><source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 112.5em)"><img src="img/responsivewebdesign.jpg" alt="responsywny web design"></picture>';
 	image(el);
 }
