@@ -35,12 +35,12 @@ function showSkills() {
 function showAbout() {
 	el = document.getElementById('info');
 	el.innerHTML =
-		'Jestem początkującym programistą webowym z ambicją stania się Full Stack Web Developer’em. Lubię uczyć się logiki i zasad działania języków programowania a także poznawać struktury zbudowanych na nich witryn. Uwielbiam także planować, analizować i optymalizować już istniejące systemy. Tak w życiu jak i w programowaniu cechuje mnie : minimalizm, dokładność, pracowitość oraz przywiązywanie uwagi do funkcjonalności.';
+		'Jestem początkującym programistą webowym z ambicją stania się Full Stack Web Developerem.<br><br>Pasja do programowania sprawia, że każdą wolną chwilę poświęcam na szkolenia z najnowszych technologii webowych, trendów w Web Designie oraz pisaniu przejrzystego, nowoczesnego kodu. Moim marzeniem jest planowanie oraz budowa dużych, nowoczesnych witryn oraz ich systemów zarządzania bazami danych. W trakcie moje poprzedniej kariery wykazałem się świetną organizacją i umiejętnością pracy w zespole  jak i zdolnością zarządzania nim – obszary, których rozwój w przyszłości chciałbym kontynuować.<br><br>Uwielbiam także analizować i optymalizować już istniejące systemy. Tak w życiu jak i w programowaniu cechuje mnie : minimalizm, dokładność, pracowitość oraz przywiązywanie uwagi do funkcjonalności.';
 	about(el);
 }
 function showImage() {
 	el = document.getElementById('info');
 	el.innerHTML =
-		'<picture class="info__img"><source srcset="img/responsivewebdesign-xs.jpg" media="(max-width: 30em)"><source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 62.5em)"><source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 112.5em)"><img src="img/responsivewebdesign.jpg" alt="responsywny web design"></picture>';
+		'<picture class="info__img"><source srcset="img/responsivewebdesign-xs.jpg" media="(max-width: 37.5em)"><source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 62.5em)"><source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 112.5em)"><img src="img/responsivewebdesign.jpg" alt="responsywny web design"></picture>';
 	image(el);
 }
