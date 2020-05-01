@@ -68,33 +68,6 @@ body {
   color: #fff;
   background-color: #2f9599; }
 
-.u-text-center {
-  text-align: center !important; }
-
-.u-mb-xl {
-  margin-bottom: 10rem !important; }
-
-.u-mb-l {
-  margin-bottom: 8rem !important; }
-
-.u-mb-m {
-  margin-bottom: 4rem !important; }
-
-.u-mb-s {
-  margin-bottom: 1.5rem !important; }
-
-.u-mt-xl {
-  margin-top: 10rem !important; }
-
-.u-mt-l {
-  margin-top: 8rem !important; }
-
-.u-mt-m {
-  margin-top: 4rem !important; }
-
-.u-mt-s {
-  margin-top: 1.5rem !important; }
-
 .container {
   margin-top: 3rem;
   display: grid;
@@ -109,6 +82,17 @@ body {
       grid-template-rows: 8rem 8rem repeat(2, 16rem) 55rem 8rem; } }
 
 .header {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
   grid-column: 2/ span 12;
   display: grid;
   grid-template-columns: repeat(12, minmax(2rem, 300rem));
@@ -186,14 +170,24 @@ body {
     background-color: #2f9599;
     border-radius: 0.5rem;
     transition: all .2s linear;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none; }
     .tile--1:hover {
       transform: scale(1.01) translateY(-0.1rem);
       box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); }
   .tile--2 {
-    border-radius: 0.5rem;
     background-color: #47dee5;
-    font-size: var(--scale1);
+    border-radius: 0.5rem;
     grid-column: span 6; }
     @media only screen and (max-width: 53.125em) {
       .tile--2 {
@@ -208,9 +202,6 @@ body {
     height: 6rem;
     fill: #fff;
     margin-bottom: .7rem; }
-    .tile__icon--social {
-      width: 6rem;
-      height: 6rem; }
 
 .social {
   height: 100%;
@@ -242,7 +233,11 @@ body {
       transform: scale(1.01) translateY(-0.1rem);
       box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); }
   .social__link {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center; }
 
 .quote {
