@@ -1,5 +1,4 @@
-// Home
-
+// ****  H  O  M  E  ****
 @mixin header-style {
 	font-size: $fs4;
 	font-weight: 300;
@@ -25,6 +24,14 @@
 		transform: scale(1.01) translateY(-.1rem);
 		box-shadow: $bs-hover;
 	}
+}
+@mixin noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
 }
 // MEDIA QUERRIES
 /*

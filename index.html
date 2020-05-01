@@ -20,7 +20,7 @@
         <!-- END OF FAV ICONS -->
 
     <script src="timer.js"></script>
-	<script src="info.js"></script>
+	
 </head>
 <body onload="odliczanie();">
 <main class="container">
@@ -28,24 +28,24 @@
     <!-- HEADER -->
 
     <header class="header">
-        <nav class="header-logo" onclick="showImage()" onselectstart="window.event.returnValue=false;">Paweł Wałęga</nav>
-        <div class="header-clock" id="clock" onselectstart="window.event.returnValue=false;"></div>
+        <nav id="logo" class="header-logo">Paweł Wałęga</nav>
+        <div class="header-clock" id="clock"></div>
     </header>
 
     <!-- MAIN CONTENT -->
 
     <article class="content">
-        <div class="tile tile--1" onclick="showAbout()" onselectstart="window.event.returnValue=false;">
+        <div id="about" class="tile tile--1">
             <svg class="tile__icon">
                 <use xlink:href="img/symbols.svg#icon-user"></use>
             </svg>
             O mnie</div>
-        <div class="tile tile--1" onclick="showSkills()" onselectstart="window.event.returnValue=false;">
+        <div id="skills" class="tile tile--1">
             <svg class="tile__icon">
                 <use xlink:href="img/symbols.svg#icon-tv"></use>
             </svg>
             Umiejętności</div>
-        <div class="tile tile--1" onclick="showExp()" onselectstart="window.event.returnValue=false;">
+        <div id="exp" class="tile tile--1">
             <svg class="tile__icon">
                 <use xlink:href="img/symbols.svg#icon-graduation-cap"></use>
             </svg>
@@ -54,14 +54,14 @@
         <div class="tile tile--social">
             <div class="social social--gh">
                 <a href="https://github.com/PawelWalega" target="_blank" class="social__link">
-                    <svg class="tile__icon tile__icon--social">
+                    <svg class="tile__icon">
                         <use xlink:href="img/symbols.svg#icon-github"></use>
                     </svg>
                 </a>
             </div>
             <div class="social social--li">
-                <a href="www.linkedin.com/in/pawel-walega" target="_blank" class="social__link">
-                    <svg class="tile__icon tile__icon--social">
+                <a href="https://www.linkedin.com/in/pawel-walega" target="_blank" class="social__link">
+                    <svg class="tile__icon">
                         <use xlink:href="img/symbols.svg#icon-linkedin1"></use>
                     </svg>
                 </a>
@@ -73,7 +73,7 @@
         <!-- INFO TILE -->
 
         <div id="info" class="info">
-            <picture class="info__img">
+            <picture class="info__img" alt="responsive Web Design">
                 <source srcset="img/responsivewebdesign-xs.jpg" media="(max-width: 37.5em)">
                 <source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 62.5em)">
                 <source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 112.5em)">
@@ -94,5 +94,6 @@
     </footer>
 
 </main>
+<script src="info.js"></script>
 </body>
 </html>
