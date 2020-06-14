@@ -24,16 +24,12 @@ function showImage() {
 	info.classList.remove('info--edu');
 	info.classList.remove('info--about');
 	info.innerHTML =
-		'<picture class="info__img" alt="responsive Web Design"><source srcset="img/responsivewebdesign-xs.jpg" media="(max-width: 37.5em)"><source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 62.5em)"><source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 112.5em)"><img src="img/responsivewebdesign.jpg" alt="responsywny web design"></picture>';
+		'<figure><picture class="info__img" alt="responsive Web Design"><source srcset="img/responsivewebdesign-xs.jpg" media="(max-width: 37.5em)"><source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 62.5em)"><source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 112.5em)"><img src="img/responsivewebdesign.jpg" alt="responsywny web design"></picture></figure>';
 }
 
-const about = document.querySelector('#about');
-const skills = document.querySelector('#skills');
-const exp = document.querySelector('#exp');
-const logo = document.querySelector('#logo');
 const info = document.querySelector('#info');
 
-about.addEventListener('click', showAbout);
-skills.addEventListener('click', showSkills);
-exp.addEventListener('click', showExp);
-logo.addEventListener('click', showImage);
+document.querySelector('#about').addEventListener('click', showAbout);
+document.querySelector('#skills').addEventListener('click', showSkills);
+document.querySelector('#exp').addEventListener('click', showExp);
+document.querySelector('#logo').addEventListener('click', showImage);
