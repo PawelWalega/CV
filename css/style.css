@@ -306,12 +306,12 @@ body {
 .skill {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 4rem 14rem 4rem 1fr 4rem;
+  grid-template-columns: 4rem 15rem 4rem 1fr 4rem;
   gap: 1rem; }
   @media only screen and (max-width: 53.125em) {
     .skill {
       grid-column: 1 / span 4;
-      grid-template-columns: 2rem 12rem 2rem 15rem; } }
+      grid-template-columns: 2rem 14.5rem 2rem 15rem; } }
   .skill__info {
     grid-column: 2 /3;
     display: flex;
