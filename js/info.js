@@ -130,6 +130,66 @@ const skills = `<div class="skill"><!--  Empty div to create 1 row gap --></div>
 		</div>
 	</div>
 <div class="skill"><!--  Empty div to create 1 row gap --></div>
+<div class="skill__expanded">
+	<h2 class="heading-2">HTML:</h2>
+	<div class="info__bullet-point">
+		Pisanie dobrze zaplanowanej semantycznie struktury
+	</div>
+	<div class="info__bullet-point">
+		Tworzenie modularnych elementów wielokrotnego użytku
+	</div>
+	<h2 class="heading-2">CSS/SCSS:</h2>
+	<div class="info__bullet-point">
+		Metodologia BEM - modułowy kod w SCSS
+	</div>
+	<div class="info__bullet-point">
+		Poprawne metody resetowania i pisania styli domyślnych
+	</div>
+	<div class="info__bullet-point">
+		Poprawne planowanie i użycie kaskadowości
+	</div>
+	<div class="info__bullet-point">
+		Niska specyficzność selektorów
+	</div>
+	<div class="info__bullet-point">
+		Budowanie komponentów wielokrotnego użytku
+	</div>
+	<div class="info__bullet-point">
+		Używanie skalowalnych rozmiarów - mała liczba media queries
+	</div>
+	<div class="info__bullet-point">
+		Opatrzony komentarzami i łatwy w utrzymaniu kod
+	</div>
+	<div class="info__bullet-point">
+		Użycie SVG oraz wydajnych obliczeniowo animacji 
+	</div>
+	<h2 class="heading-2">Java Script:</h2>
+	<div class="info__bullet-point">
+		Płynna znajomość ES6
+	</div>
+	<div class="info__bullet-point">
+		Poruszanie się w strukturze DOM oraz obsługa zdarzeń
+	</div>
+	<div class="info__bullet-point">
+		Pisanie funkcji i algorytmów wielokrotnego użytku
+	</div>
+	<div class="info__bullet-point">
+		Zapytania AJAX (axios jak i JS ES6)
+	</div>
+	<div class="info__bullet-point">
+		Zrozumienie działania Obiektów, prototypów i dziedziczenia
+	</div>
+	<div class="info__bullet-point">
+		Zrozumienie działania stosu wywołań
+	</div>
+	<div class="info__bullet-point">
+		Zrozumienie działania <u>this</u>
+	</div>
+	<div class="info__bullet-point">
+		Destructuring i spread
+	</div>
+</div>
+<div class="skill"><!--  Empty div to create 1 row gap --></div>
 <div class="skill__others">
 	<h2 class="heading-2">Podstawy:</h2>
 	<div class="info__bullet-point">

@@ -39,7 +39,8 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -272,14 +273,14 @@ body {
   .info--skills {
     display: grid;
     grid-template-columns: 4rem 14rem 4rem 1fr 4rem;
-    grid-template-rows: repeat(14, 2.6rem);
+    grid-template-rows: repeat(41, 2.6rem);
     gap: 1rem;
-    font-size: var(--scale0); }
+    font-size: var(--scale0);
+    overflow-y: scroll; }
     @media only screen and (max-width: 53.125em) {
       .info--skills {
         grid-template-columns: 2rem 12rem 2rem 15rem minmax(0.5rem, 1fr) 12rem minmax(0, 4fr);
-        grid-template-rows: repeat(8, 2.6rem) 1fr;
-        padding-top: 4rem; } }
+        grid-template-rows: repeat(24, 2.6rem) 1fr; } }
   .info--edu {
     padding: 3rem;
     display: block;
@@ -324,13 +325,28 @@ body {
     height: 2rem;
     width: 2rem;
     margin: 0 .5rem; }
+  .skill__expanded {
+    grid-row: 8 / 22;
+    grid-column: 2/ span 3;
+    display: grid;
+    grid-template-columns: 1fr; }
+    @media only screen and (max-width: 53.125em) {
+      .skill__expanded {
+        grid-row: 1 / span 21;
+        grid-column: 6 / -1;
+        display: grid;
+        gap: 1rem;
+        margin-top: 2rem;
+        align-items: center; }
+        .skill__expanded h2 {
+          margin: 0; } }
   .skill__others {
-    grid-row: 8 / -1;
+    grid-row: 11 / -1;
     grid-column: 2/ span 3; }
     @media only screen and (max-width: 53.125em) {
       .skill__others {
-        grid-row: 1 / span 7;
-        grid-column: 6 / -1;
+        grid-row: 9 / span 4;
+        grid-column: 2 / span 3;
         display: grid;
         gap: 1rem;
         margin-top: 2rem;
