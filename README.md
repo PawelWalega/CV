@@ -1,2 +1,2 @@
 # CV
-My CV in a form of responsive website using CSS Grid, SASS and Flexbox.
+My CV in a form of responsive website using SASS, Grid, Flexbox and JavaScript.

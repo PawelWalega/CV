@@ -65,7 +65,7 @@
 	text-transform: uppercase;
 	box-shadow: $bs-std;
 	grid-column: span 3;
-	@include tile-flex;
+	@include tile-center;
 
 	@include responsive (medium) {
 		grid-column: span 4;
@@ -103,14 +103,14 @@
 	border-radius: $br-std;
 	&--gh {
 		grid-column: 1 / span 4;
-		@include tile-flex;
+		@include tile-center;
 		@include tile-link;
 		box-shadow: $bs-std;
 		background-color: #222222;
 	}
 	&--li {
 		grid-column: 5/ span 4;
-		@include tile-flex;
+		@include tile-center;
 		@include tile-link;
 		box-shadow: $bs-std;
 		background-color: #107dac;
@@ -224,7 +224,7 @@
 		display: flex;
 	}
 	&__icon {
-		fill: $c-primary;
+		fill: $c-secondary;
 		height: 2rem;
 		width: 2rem;
 		margin: 0 .5rem;
