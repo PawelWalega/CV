@@ -1,10 +1,10 @@
 {
-	"name": "Template",
+	"name": "Responsive-CV",
 	"version": "1.0.0",
-	"description": "Empty Web template with basic SASS files",
-	"main": "index.js",
+	"description": "My CV in a form of responsive website",
+	"main": "index.html",
 	"scripts": {
-		"watch:sass": "node-sass sass/main.scss css/style.css -w"
+		"watch:sass": "node-sass sass/main.scss css/main.css -w"
 	},
 	"author": "Paweł Wałęga",
 	"license": "ISC",

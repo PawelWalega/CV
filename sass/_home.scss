@@ -1,0 +1,261 @@
+.main-grid {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: minmax(1rem, 1fr) minmax(20rem, 120rem)
+		minmax(1rem, 1fr);
+	grid-template-rows: 10rem 52rem 10rem;
+	gap: $main-gap;
+	@include responsive(991) {
+		grid-template-rows: 10rem 52rem 10rem;
+	}
+	@include responsive(850) {
+		grid-template-rows: 10rem max-content 10rem;
+	}
+}
+.header {
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: $main-gap;
+	@include responsive(850) {
+		grid-template-columns: 1fr;
+	}
+	&__logo,
+	&__clock {
+		@include tile-look;
+		@include no-select;
+		background-color: $c-tertiary;
+		font-size: 4.6em;
+	}
+	&__logo {
+		@include tile-hover;
+	}
+	&__clock {
+		@include responsive(850) {
+			display: none;
+		}
+	}
+}
+.content {
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 16rem);
+	gap: $main-gap;
+	@include responsive(850) {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 16rem 16rem 60rem;
+	}
+	@include responsive(480) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 16rem 16rem 84rem 12rem;
+	}
+}
+.tile {
+	@include tile-look;
+	@include no-select;
+	padding: 1rem;
+	background-color: $c-primary;
+	text-transform: uppercase;
+	&__info {
+		font-size: 1.8em;
+		text-align: center;
+	}
+	&--social {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: $main-gap;
+	}
+	&--hover {
+		@include tile-hover;
+	}
+	&--gh,
+	&--li {
+		@include tile-look;
+	}
+	&--gh {
+		background-color: #222222;
+	}
+	&--li {
+		background-color: #107dac;
+	}
+	&--quote {
+		background-color: $c-secondary;
+		grid-column: 1 / 3;
+		@include responsive(850) {
+			grid-column: 2 / -1;
+		}
+		@include responsive(480) {
+			grid-column: 1 / -1;
+			grid-row: 4 / 5;
+		}
+	}
+}
+.info {
+	@include tile-look;
+	color: $c-tertiary;
+	grid-row: 1 / -1;
+	grid-column: 3 / -1;
+	font-size: 1.6em;
+	line-height: 1.4;
+	overflow: hidden;
+	padding: 2rem 4rem;
+	@include responsive(850) {
+		grid-row: 3 / 4;
+		grid-column: 1 / -1;
+	}
+	@include responsive(575) {
+		font-size: 2em;
+	}
+	@include responsive(480) {
+		font-size: 2.25em;
+	}
+	&__img {
+		max-width: 100%;
+		height: auto;
+	}
+	&--about {
+		display: block;
+		overflow-y: scroll;
+
+		& p {
+			margin: 1.5rem 0;
+		}
+	}
+	&--skills {
+		display: block;
+		overflow-y: scroll;
+	}
+	&--edu {
+		display: block;
+		overflow-y: scroll;
+	}
+	&__skill-name {
+		display: flex;
+		align-items: center;
+		font-size: 1.1em;
+		@include responsive(396) {
+			font-size: .95em;
+		}
+	}
+	&__main-skills {
+		display: grid;
+		grid-template-columns: .75fr 1fr;
+		gap: 1rem;
+		@include responsive(850) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@include responsive(480) {
+			grid-template-columns: 1.5fr 1fr;
+		}
+	}
+	&__skill-level {
+		display: flex;
+		align-items: center;
+	}
+	&__skill-logo {
+		margin-right: 1rem;
+		margin-bottom: 0;
+		@include responsive(850) {
+			width: 3rem;
+			height: 3rem;
+		}
+		@include responsive(480) {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+	&__star {
+		fill: $c-secondary;
+		@include responsive(850) {
+			width: 3rem;
+			height: 3rem;
+		}
+		@include responsive(480) {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+	&__skills-detailed {
+		padding: 2rem 0;
+	}
+	&__skill-title,
+	&__extras {
+		margin: 3rem 0 1rem;
+		font-weight: 700;
+		font-size: 1.25em;
+
+		&--mt0 {
+			margin-top: 0;
+		}
+	}
+	&__detailed-list {
+		list-style: none;
+		margin-top: 1rem;
+		&:last-child {
+			margin-bottom: 2rem;
+		}
+	}
+	&__list-item {
+		margin-left: 1rem;
+		&::before {
+			content: "\00b7\00a0";
+			font-size: 1.2em;
+		}
+	}
+	&__date {
+		font-size: 0.85em;
+	}
+}
+.quote {
+	font-size: 2em;
+	text-transform: unset;
+	&__text {
+		font-weight: 300;
+		font-style: italic;
+		&::before,
+		&::after {
+			display: inline-block;
+			font-size: 1.5em;
+		}
+		&::before {
+			content: "\201D\00a0";
+		}
+		&::after {
+			content: "\00a0\201E";
+		}
+	}
+}
+.footer {
+	@include tile-look;
+	grid-column: 2 / 3;
+	background-color: $c-tertiary;
+	flex-direction: row;
+	font-size: 1.6em;
+	margin-bottom: 1rem;
+	@include responsive(396) {
+		flex-direction: column;
+	}
+	&__copyright {
+		opacity: .9;
+	}
+	&__email {
+		&,
+		&:visited,
+		&:link {
+			height: 4rem;
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			color: #fff;
+			opacity: .9;
+			transition: all .1s ease-in-out;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&__icon {
+		margin: 0 0 0 1rem;
+	}
+}

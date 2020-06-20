@@ -1,0 +1,25 @@
+body {
+	font: normal normal 400 1rem/1.6 'Roboto', sans-serif;
+	color: #fff;
+	@include responsive(991) {
+		font-size: 1.25rem;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+}
+.p {
+	font-size: 1.6em;
+	&:not(:last-child) {
+		margin-bottom: 1em;
+	}
+}
+::selection {
+	color: #fff;
+	background-color: $c-primary;
+}

@@ -6,8 +6,8 @@
 
     <title>Paweł Wałęga - Responsywne CV</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
         <!-- FAV ICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -19,83 +19,76 @@
     <meta name="theme-color" content="#ffffff">
         <!-- END OF FAV ICONS -->
 
-    <script src="timer.js"></script>
+    <script src="js/timer.js"></script>
 	
 </head>
 <body onload="odliczanie();">
-<main class="container">
 
-    <!-- HEADER -->
-
-    <header class="header">
-        <nav id="logo" class="header-logo">Paweł Wałęga</nav>
-        <div class="header-clock" id="clock"></div>
-    </header>
-
-    <!-- MAIN CONTENT -->
-
-    <article class="content">
-        <div id="about" class="tile tile--1">
-            <svg class="tile__icon">
-                <use href="img/symbols.svg#icon-user"></use>
-            </svg>
-            O mnie</div>
-        <div id="skills" class="tile tile--1">
-            <svg class="tile__icon">
-                <use href="img/symbols.svg#icon-tv"></use>
-            </svg>
-            Umiejętności</div>
-        <div id="exp" class="tile tile--1">
-            <svg class="tile__icon">
-                <use href="img/symbols.svg#icon-graduation-cap"></use>
-            </svg>
-           <div>Edukacja i</div>doświadczenie</div>
-
-        <div class="tile tile--social">
-            <div class="social social--gh">
-                <a href="https://github.com/PawelWalega" target="_blank" class="social__link">
-                    <svg class="tile__icon">
-                       <use href="img/symbols.svg#icon-github"></use>
+    <main class="main-grid">
+        <header class="header">
+            <nav class="header__logo">
+                Paweł Wałęga
+            </nav>
+            <div class="header__clock"></div>
+        </header>
+        <article class="content">
+            <div class="tile tile--hover" id="about">
+                <svg class="icon">
+                    <use href="img/svgs.svg#icon-user"></use>
+                </svg>
+                <h2 class="tile__info">o mnie</h2>
+            </div>
+            <div class="tile tile--hover" id="skills">
+                <svg class="icon">
+                    <use href="img/svgs.svg#icon-pc"></use>
+                </svg>
+                <h2 class="tile__info">umiejętności</h2>
+            </div>
+            <div class="tile tile--hover" id="exp">
+                <svg class="icon">
+                    <use href="img/svgs.svg#icon-cap"></use>
+                </svg>
+                <h2 class="tile__info">doświadczenie</h2>
+            </div>
+            <div class="tile--social">
+                <a href="https://github.com/PawelWalega" target="_blank" class="tile tile--hover tile--gh">
+                    <svg class="icon">
+                        <use href="img/svgs.svg#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/pawel-walega" target="_blank" class="tile tile--hover tile--li">
+                    <svg class="icon">
+                        <use href="img/svgs.svg#icon-linkedin"></use>
                     </svg>
                 </a>
             </div>
-            <div class="social social--li">
-                <a href="https://www.linkedin.com/in/pawel-walega" target="_blank" class="social__link">
-                    <svg class="tile__icon">
-                        <use href="img/symbols.svg#icon-linkedin1"></use>
-                    </svg>
-                </a>
-            </div>
-        </div>
+            <blockquote cite="https://www.huxley.net/bnw/four.html" class="tile tile--quote quote">
+                <p class="quote__text">Talk is cheap. Show me the code.</p>
+                <footer>— Linus Torvalds</footer>
+            </blockquote>
+            <div class="info">
 
-        <div class="tile tile--2"><div class="quote">Talk is cheap. Show me the code.</div>- Linus Torvalds</div>
-
-        <!-- INFO TILE -->
-
-        <div id="info" class="info">
-            <figure>
-                <picture class="info__img" alt="responsive Web Design">
-                    <source srcset="img/responsivewebdesign-xs.jpg" media="(max-width: 37.5em)">
-                    <source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 62.5em)">
-                    <source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 112.5em)">
+                <figure>
+                    <picture class="info__img">
+                        <source srcset="img/responsivewebdesign-xs.jpg" media="(max-width: 37.5em)">
+                        <source srcset="img/responsivewebdesign-mobile.jpg" media="(max-width: 61.875em)">
+                        <source srcset="img/responsivewebdesign-large.jpg" media="(min-width: 105em)">
                         <img src="img/responsivewebdesign.jpg" alt="responsywny web design">
-                </picture>
-            </figure>
-        </div>
-    </article>
+                    </picture>
+                </figure>
 
-    <!-- FOOTER -->
-
-    <footer class="footer">
-       2020&copy; Paweł Wałęga
-        <a href="mailto:pawel.walega@protonmail.com" class="email"> 
-        <svg class="icon">
-            <use href="img/symbols.svg#icon-mail"></use>
-        </svg>pawel.walega@protonmail.com</a>
-    </footer>
-
-</main>
-<script src="js/info.js"></script>
+            </div>
+        </article>
+        <footer class="footer">
+           <span class="footer__copyright">2020&copy; Paweł Wałęga</span>
+            <a href="mailto:pawel.walega@protonmail.com" class="footer__email"> 
+                <svg class="icon icon--small footer__icon">
+                    <use href="img/svgs.svg#icon-mail"></use>
+                </svg><span>pawel.walega@protonmail.com</span></a>
+        </footer>
+    </main>
+    
+<script src="js/info-pl.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

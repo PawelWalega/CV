@@ -23,9 +23,9 @@ function showImage() {
 	info.innerHTML = img;
 }
 
-const info = document.querySelector('#info');
+const info = document.querySelector('.info');
 
 document.querySelector('#about').addEventListener('click', showAbout);
 document.querySelector('#skills').addEventListener('click', showSkills);
 document.querySelector('#exp').addEventListener('click', showExp);
-document.querySelector('#logo').addEventListener('click', showImage);
+document.querySelector('.header__logo').addEventListener('click', showImage);

@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+	@include responsive(1680) {
+		font-size: 75%;
+	}
+	@include responsive(991) {
+		font-size: 50%;
+	}
+	@include responsive(575) {
+		font-size: 40%;
+	}
+	@include responsive(480) {
+		font-size: 30%;
+	}
+	@include responsive(288) {
+		font-size: 25%;
+	}
+}
+body {
+	box-sizing: border-box;
+}
+.icon {
+	fill: #fff;
+	width: 6rem;
+	height: 6rem;
+	margin-bottom: 1rem;
+	&--small {
+		width: 2rem;
+		height: 2rem;
+	}
+}

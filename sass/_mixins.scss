@@ -1,0 +1,88 @@
+// --------------------------------------------
+// ---------------- HOME ----------------------
+// --------------------------------------------
+@mixin tile-look {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: $bs-std;
+	border-radius: $br-std;
+}
+@mixin tile-hover {
+	backface-visibility: hidden;
+	transition: all .2s linear;
+	cursor: pointer;
+	&:hover {
+		transform: scale(1.01) translateY(-.1px);
+		box-shadow: $bs-hover;
+	}
+}
+@mixin no-select {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+}
+// --------------------------------------------
+// -------------- MEDIA QUERRIES --------------
+// --------------------------------------------
+@mixin responsive ($breakpoint) {
+	@if $breakpoint == 288 {
+		@media only screen and (max-width: 18em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 396 {
+		@media only screen and (max-width: 24.75em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 480 {
+		@media only screen and (max-width: 30em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 575 {
+		@media only screen and (max-width: 35.9em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 767 {
+		@media only screen and (max-width: 47.875em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 850 {
+		@media only screen and (max-width: 53.125em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 991 {
+		@media only screen and (max-width: 61.875em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 1199 {
+		@media only screen and (max-width: 74.875em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 1400 {
+		@media only screen and (min-width: 87.5em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 1680 {
+		@media only screen and (min-width: 105em) {
+			@content;
+		}
+	}
+	@if $breakpoint == 1920 {
+		@media only screen and (min-width: 120em) {
+			@content;
+		}
+	}
+}
