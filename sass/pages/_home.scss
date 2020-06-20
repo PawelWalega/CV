@@ -65,7 +65,7 @@
 	text-transform: uppercase;
 	box-shadow: $bs-std;
 	grid-column: span 3;
-	@include tile-flex;
+	@include tile-center;
 
 	@include responsive (medium) {
 		grid-column: span 4;
@@ -103,14 +103,14 @@
 	border-radius: $br-std;
 	&--gh {
 		grid-column: 1 / span 4;
-		@include tile-flex;
+		@include tile-center;
 		@include tile-link;
 		box-shadow: $bs-std;
 		background-color: #222222;
 	}
 	&--li {
 		grid-column: 5/ span 4;
-		@include tile-flex;
+		@include tile-center;
 		@include tile-link;
 		box-shadow: $bs-std;
 		background-color: #107dac;
@@ -163,14 +163,14 @@
 	&--skills {
 		display: grid;
 		grid-template-columns: 4rem 14rem 4rem 1fr 4rem;
-		grid-template-rows: repeat(14, 2.6rem);
+		grid-template-rows: repeat(41, 2.6rem);
 		gap: $gap;
 		font-size: $fs0;
+		overflow-y: scroll;
 		@include responsive (medium) {
 			grid-template-columns: 2rem 12rem 2rem 15rem minmax(.5rem, 1fr) 12rem
 				minmax(0, 4fr);
-			grid-template-rows: repeat(8, 2.6rem) 1fr;
-			padding-top: 4rem;
+			grid-template-rows: repeat(24, 2.6rem) 1fr;
 		}
 	}
 	&--edu {
@@ -206,12 +206,12 @@
 .skill {
 	grid-column: 1 / -1;
 	display: grid;
-	grid-template-columns: 4rem 14rem 4rem 1fr 4rem;
+	grid-template-columns: 4rem 15rem 4rem 1fr 4rem;
 	gap: $gap;
 
 	@include responsive (medium) {
 		grid-column: 1 / span 4;
-		grid-template-columns: 2rem 12rem 2rem 15rem;
+		grid-template-columns: 2rem 14.5rem 2rem 15rem;
 	}
 
 	&__info {
@@ -224,17 +224,35 @@
 		display: flex;
 	}
 	&__icon {
-		fill: $c-primary;
+		fill: $c-secondary;
 		height: 2rem;
 		width: 2rem;
 		margin: 0 .5rem;
 	}
+	&__expanded {
+		grid-row: 8 / 22;
+		grid-column: 2/ span 3;
+		display: grid;
+		grid-template-columns: 1fr;
+		@include responsive (medium) {
+			grid-row: 1 / span 21;
+			grid-column: 6 / -1;
+			display: grid;
+			gap: $gap;
+
+			margin-top: 2rem;
+			align-items: center;
+			& h2 {
+				margin: 0;
+			}
+		}
+	}
 	&__others {
-		grid-row: 8 / -1;
+		grid-row: 11 / -1;
 		grid-column: 2/ span 3;
 		@include responsive (medium) {
-			grid-row: 1 / span 7;
-			grid-column: 6 / -1;
+			grid-row: 9 / span 4;
+			grid-column: 2 / span 3;
 			display: grid;
 			gap: $gap;
 

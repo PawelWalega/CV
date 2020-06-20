@@ -1,5 +1,5 @@
 function odliczanie() {
-	let dzisiaj = new Date();
+	const dzisiaj = new Date();
 
 	let godzina = dzisiaj.getHours();
 	if (godzina < 10) godzina = `0${godzina}`;

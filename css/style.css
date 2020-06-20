@@ -15,7 +15,6 @@
 850px		- medium (53.125em)
 600px		- small (37.5em)
 480px		- extra small (30em)
-
 */
 *,
 *::after,
@@ -40,7 +39,8 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -186,7 +186,7 @@ body {
       transform: scale(1.01) translateY(-0.1rem);
       box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3); }
   .tile--2 {
-    background-color: #47dee5;
+    background-color: #e5a630;
     border-radius: 0.5rem;
     grid-column: span 6; }
     @media only screen and (max-width: 53.125em) {
@@ -273,14 +273,14 @@ body {
   .info--skills {
     display: grid;
     grid-template-columns: 4rem 14rem 4rem 1fr 4rem;
-    grid-template-rows: repeat(14, 2.6rem);
+    grid-template-rows: repeat(41, 2.6rem);
     gap: 1rem;
-    font-size: var(--scale0); }
+    font-size: var(--scale0);
+    overflow-y: scroll; }
     @media only screen and (max-width: 53.125em) {
       .info--skills {
         grid-template-columns: 2rem 12rem 2rem 15rem minmax(0.5rem, 1fr) 12rem minmax(0, 4fr);
-        grid-template-rows: repeat(8, 2.6rem) 1fr;
-        padding-top: 4rem; } }
+        grid-template-rows: repeat(24, 2.6rem) 1fr; } }
   .info--edu {
     padding: 3rem;
     display: block;
@@ -307,12 +307,12 @@ body {
 .skill {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 4rem 14rem 4rem 1fr 4rem;
+  grid-template-columns: 4rem 15rem 4rem 1fr 4rem;
   gap: 1rem; }
   @media only screen and (max-width: 53.125em) {
     .skill {
       grid-column: 1 / span 4;
-      grid-template-columns: 2rem 12rem 2rem 15rem; } }
+      grid-template-columns: 2rem 14.5rem 2rem 15rem; } }
   .skill__info {
     grid-column: 2 /3;
     display: flex;
@@ -321,17 +321,32 @@ body {
     grid-column: 4/6;
     display: flex; }
   .skill__icon {
-    fill: #2f9599;
+    fill: #e5a630;
     height: 2rem;
     width: 2rem;
     margin: 0 .5rem; }
+  .skill__expanded {
+    grid-row: 8 / 22;
+    grid-column: 2/ span 3;
+    display: grid;
+    grid-template-columns: 1fr; }
+    @media only screen and (max-width: 53.125em) {
+      .skill__expanded {
+        grid-row: 1 / span 21;
+        grid-column: 6 / -1;
+        display: grid;
+        gap: 1rem;
+        margin-top: 2rem;
+        align-items: center; }
+        .skill__expanded h2 {
+          margin: 0; } }
   .skill__others {
-    grid-row: 8 / -1;
+    grid-row: 11 / -1;
     grid-column: 2/ span 3; }
     @media only screen and (max-width: 53.125em) {
       .skill__others {
-        grid-row: 1 / span 7;
-        grid-column: 6 / -1;
+        grid-row: 9 / span 4;
+        grid-column: 2 / span 3;
         display: grid;
         gap: 1rem;
         margin-top: 2rem;
