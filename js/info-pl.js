@@ -1,6 +1,6 @@
 const about = `
     <article>
-        <p>Jestem początkującym programistą webowym z ambicją stania się Full Stack Web Developerem integrującym protokoły płatnicze BP/LNP dla małych i średnich przedsiębiorstw.
+        <p>Jestem początkującym programistą webowym z ambicją stania się Full Stack Web Developerem integrującym protokoły płatnicze BP/LNP dla średnich i dużych przedsiębiorstw.
         <p>Pasja do programowania sprawia, iż każdą wolną chwilę poświęcam na szkolenia z najnowszych technologii i trendów webowych 
         a także pisanie przejrzystego, nowoczesnego kodu. Podczas pracy dużą uwagę przykładam do użyteczności, skalowalności oraz prostoty utrzymania
         tworzonych przeze mnie projektów. Uwielbiam także analizować i optymalizować już istniejące systemy.
