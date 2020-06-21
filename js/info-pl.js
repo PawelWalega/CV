@@ -2,9 +2,9 @@ const about = `
     <article>
         <p>Jestem początkującym programistą webowym z ambicją stania się Full Stack Web Developerem.
         <p>Pasja do programowania sprawia, że każdą wolną chwilę poświęcam na szkolenia z najnowszych technologii i trendów webowych 
-        a także pisanie przejrzystego, nowoczesnego kodu. Podczas pracy dużą uwagę przykładam do użyteczności, skalowalności oraz prostoty utrzymania
+        a także pisanie przejrzystego, nowoczesnego kodu. Podczas pracy dużą uwagę przykładam do użyteczności, skalowalności a także prostoty utrzymania
         tworzonych przeze mnie projektów. Uwielbiam także analizować i optymalizować już istniejące systemy.
-        Moim marzeniem jest planowanie oraz budowa dużych, nowoczesnych, funkcjonalnych, pięknie wyglądających witryn i aplikacji webowych.
+        Moim marzeniem jest budowa dużych, nowoczesnych oraz funkcjonalnych witryn i sklepów internetowych. 
         <p>W trakcie mojej poprzedniej kariery wykazałem się świetną organizacją i umiejętnością pracy w zespole  
         jak i zdolnością zarządzania nim – obszary, których rozwój w przyszłości chciałbym kontynuować. 
         Tak w życiu jak i w programowaniu cechuje mnie : minimalizm, dokładność, oraz pracowitość.
@@ -198,7 +198,7 @@ const exp = `
         </div>
         <ul class="info__detailed-list">
             <li class="info__list-item">Tworzenie responsywnych witryn internetowych według szablonów graficznych przy użyciu SCSS oraz metodologii BEM</li>
-            <li class="info__list-item">Pisanie algorytmów sortujących, własnej walidacji formularzy oraz interakcji ze stroną przy pomocy PHP, JavaScript ES6 i jQuery</li>
+            <li class="info__list-item">Pisanie algorytmów sortujących, własnej walidacji formularzy oraz interakcji ze stroną przy pomocy PHP, JavaScript i jQuery</li>
             <li class="info__list-item">System logowania do Wordpress i wyświetlania danych klientów za pomocą AJAXa (połączenie admin-ajax.php oraz jQuery)</li>
             <li class="info__list-item">Obsługa formularza Contact Form 7 i jego walidacja - PHP i JavaScript</li>
             <li class="info__list-item">Projektowanie i wdrożenie mobilnej wersji witryny internetowej przy pomocy Bootstrap 4, CSS GRID oraz Flexboxa</li>
