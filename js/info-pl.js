@@ -1,10 +1,10 @@
 const about = `
     <article>
-        <p>Jestem początkującym programistą webowym z ambicją stania się Front-end Web Developerem oraz UI/UX Designerem.
+        <p>Jestem początkującym programistą webowym z ambicją stania się Full Stack Web Developerem integrującym protokoły płatnicze BP/LNP dla małych i średnich przedsiębiorstw.
         <p>Pasja do programowania sprawia, iż każdą wolną chwilę poświęcam na szkolenia z najnowszych technologii i trendów webowych 
         a także pisanie przejrzystego, nowoczesnego kodu. Podczas pracy dużą uwagę przykładam do użyteczności, skalowalności oraz prostoty utrzymania
         tworzonych przeze mnie projektów. Uwielbiam także analizować i optymalizować już istniejące systemy.
-        Moim marzeniem jest planowanie oraz budowa dużych, nowoczesnych, pięknie wyglądających witryn i aplikacji webowych.
+        Moim marzeniem jest planowanie oraz budowa dużych, nowoczesnych, funkcjonalnych, pięknie wyglądających witryn i aplikacji webowych.
         <p>W trakcie mojej poprzedniej kariery wykazałem się świetną organizacją i umiejętnością pracy w zespole  
         jak i zdolnością zarządzania nim – obszary, których rozwój w przyszłości chciałbym kontynuować. 
         Tak w życiu jak i w programowaniu cechuje mnie : minimalizm, dokładność, oraz pracowitość.
@@ -145,9 +145,9 @@ const skills = `
 						<h3 class="info__skill-title">CSS/SCSS:</h3>
 					</header>
 					<ul class="info__detailed-list">
-						<li class="info__list-item">Klasy oraz pliki SASS w metodologii BEM </li>
-						<li class="info__list-item">Poprawne metody resetowania styli oraz stylów domyślnych</li>
-						<li class="info__list-item">Przemyślne planowanie i zastosowanie kaskady</li>
+						<li class="info__list-item">Klasy oraz struktura folderów/plików SASS w metodologii BEM </li>
+						<li class="info__list-item">Poprawne metody resetowania i ustawiania stylów domyślnych</li>
+						<li class="info__list-item">Przemyślane planowanie i zastosowanie kaskady</li>
 						<li class="info__list-item">Stylowanie oparte o unikalne selektory klasowe</li>
 						<li class="info__list-item">Skalowalne fonty, odległości i wymiary (mała ilość media queries)</li>
 						<li class="info__list-item">Wydajne obliczeniowo animacje</li>
@@ -182,7 +182,7 @@ const skills = `
 						<li class="info__list-item">Git VCS i Linux</li>
 						<li class="info__list-item">Contact Form 7</li>
 						<li class="info__list-item">Advanced Custom Fields</li>
-						<li class="info__list-item">Node.js in NPM</li>
+						<li class="info__list-item">Node.js i NPM</li>
 
 					</ul>
 					<div class="info__extras">
@@ -202,7 +202,7 @@ const exp = `
         </div>
         <ul class="info__detailed-list">
             <li class="info__list-item">Tworzenie responsywnych witryn internetowych według szablonów graficznych przy użyciu SCSS oraz metodologii BEM</li>
-            <li class="info__list-item">Pisanie algorytmów sortujących, własnej walidacji formularzy oraz interakci ze stroną przy pomocy JavaScript ES6 oraz jQuery</li>
+            <li class="info__list-item">Pisanie algorytmów sortujących, własnej walidacji formularzy oraz interakci ze stroną przy pomocy PHP, JavaScript ES6 i jQuery</li>
             <li class="info__list-item">System logowania i wyświetlania danych klientów za pomocą AJAXa (połączenie admin-ajax.php oraz jQuery)</li>
             <li class="info__list-item">Obsługa formularza Contact Form 7 i jego walidacja przy pomocy PHP</li>
             <li class="info__list-item">Projektowanie i wdrożenie mobilnej wersji witryny internetowej przy pomocy Bootstrap 4, CSS GRID oraz Flexboxa </li>
@@ -232,10 +232,10 @@ const exp = `
             01.2016 - 11.2019 Milton Keynes, Wielka Brytania
         </div>
         <ul class="info__detailed-list">
-            <li class="info__list-item">organizacja pracy teamu goods in oraz kolejności załadunku/rozładunku towaru</li>
-            <li class="info__list-item">sprawdzanie nieścisłości produktów/raportowanie oraz dochodzenie przyczyn błędów</li>
-            <li class="info__list-item">przygotowywanie procedur oraz szkolenie nowych pracowników</li>
-            <li class="info__list-item">obsługa wszelkiego rodzaju maszyn magazynowych</li>
+            <li class="info__list-item">Organizacja pracy zespołu "goods-in" oraz kolejności załadunku/rozładunku towaru</li>
+            <li class="info__list-item">Raportowanie nieścisłości stanu produktów oraz dochodzenie ich przyczyn</li>
+            <li class="info__list-item">Przygotowywanie procedur oraz szkolenie nowych pracowników</li>
+            <li class="info__list-item">Obsługa wszelkiego rodzaju maszyn magazynowych</li>
         </ul>
     </article>
 `;
